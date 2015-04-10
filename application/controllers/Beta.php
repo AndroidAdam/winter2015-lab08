@@ -8,9 +8,9 @@
  * ------------------------------------------------------------------------
  */
 class Beta extends Application {
-
     function __construct() {
         parent::__construct();
+        $this->restrict(array(ROLE_USER, ROLE_ADMIN));
     }
 
     //-------------------------------------------------------------
